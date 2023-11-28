@@ -1,0 +1,20 @@
+<div class="game">
+    <p>game works!</p>  
+</div>
+<div class="moreInfo">
+    <div *ngIf="!this.moreInfoData.exists">
+        <p>CivicsQuest is a game that teaches you about the United States Constitution. In an enthralling adventure, use the articles and amendments of the constitution to defeat senarios of injustice, inspired by real supreme court decisions! <br><br>Learn more about your constitutional rights with CivicsQuest!</p>
+    </div>
+    <div *ngIf="this.moreInfoData.exists">
+        <div *ngIf="moreInfoData.isCase">
+            <a [href]="this.moreInfoData.pdfLink" target="_blank">
+                <p>More Information About {{ moreInfoData.title }}</p>
+            </a>
+            <iframe [src]="getUrl()" width="100%" height="100%"></iframe>
+        </div>
+        <div *ngIf="!moreInfoData.isCase">
+            <p>{{ moreInfoData.title }}</p>
+            <p>{{ moreInfoData.description }}</p>
+        </div>
+    </div>
+</div>

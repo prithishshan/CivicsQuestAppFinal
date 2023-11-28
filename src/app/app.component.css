@@ -1,0 +1,39 @@
+nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 3vw;
+    border-bottom: 1px solid #d3d3d3;
+    margin:0;
+}
+footer {
+    background-color: gray;
+    color: lightgray;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+    padding-top: 1vh;
+    font-family: sans-serif
+}
+.logo {
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+h1 {
+    font-family: "Lucida Handwriting", cursive;
+    margin: 0px;
+    font-size: 30pt;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+p {
+    font-family: "Copperplate", fantasy;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 10pt;
+}
