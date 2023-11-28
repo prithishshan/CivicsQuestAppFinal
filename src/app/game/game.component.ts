@@ -20,7 +20,7 @@ export class GameComponent {
   }
 
   pollData = () => {
-    this.http.get("http://localhost:8080/more_info").subscribe(
+    this.http.get("https://civicsquestapi.azurewebsites.net/more_info").subscribe(
       (result:any) => {
         if (result.title) {
           if (this.moreInfoData.id != result.id) {
